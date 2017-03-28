@@ -7,7 +7,7 @@
     "test": "echo TODO",
     "lint": "eslint webpack.config.js app.js src",
     "build:dev": "webpack --watch | node app",
-    "build:prod": "npm run lint && rm -rf dist && webpack -p"
+    "build:prod": "npm run lint && rm -rf dist && webpack -p && cp src/image.jpg dist && node app"
   },
   "author": "",
   "license": "ISC",

@@ -6,7 +6,7 @@ A simple authentication example using Node.js & [JWT](https://jwt.io) that prote
 
 ```javascript
 npm install
-npm run build:dev
+npm run build:prod // Also copies image.jpg to dist/
 // navigate to http://localhost:5000
 ```
 

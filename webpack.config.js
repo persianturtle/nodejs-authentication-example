@@ -1,5 +1,4 @@
 const { resolve } = require('path')
-const Webpack = require('webpack')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -18,14 +17,6 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-      },
-      {
-        test: /\.svg$/,
-        use: [ 'raw-loader' ]
-      },
-      {
-        test: /\.(woff|woff2|png)$/,
-        loader: 'file-loader'
       }
     ]
   },
@@ -39,10 +30,6 @@ module.exports = {
       filename: 'login.html',
       template: 'src/login.html',
       chunks: ['login']
-    }),
-    new Webpack.LoaderOptionsPlugin({
-      minimize: false,
-      debug: true
     })
   ]
 }
