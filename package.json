@@ -1,0 +1,42 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo TODO",
+    "lint": "eslint webpack.config.js app.js src",
+    "build:dev": "webpack --watch | node app",
+    "build:prod": "npm run lint && rm -rf dist && webpack -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-eslint": "latest",
+    "babel-loader": "latest",
+    "babel-preset-es2015": "latest",
+    "babel-preset-react": "latest",
+    "babel-preset-stage-1": "latest",
+    "eslint": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-config-standard-react": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-react": "latest",
+    "eslint-plugin-standard": "latest",
+    "file-loader": "latest",
+    "html-webpack-plugin": "latest",
+    "raw-loader": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "styled-components": "latest",
+    "webpack": "latest",
+    "webpack-dev-server": "latest"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "cookie-parser": "latest",
+    "express": "latest",
+    "jsonwebtoken": "latest"
+  }
+}

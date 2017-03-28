@@ -1,0 +1,10 @@
+{
+  "extends": ["standard", "standard-react"],
+  "parser": "babel-eslint",
+  "rules": {
+    "max-len": [2, 80, 2]
+  },
+  "globals": {
+    "fetch": true
+  }
+}
